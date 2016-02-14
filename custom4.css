@@ -1,0 +1,570 @@
+html,body,div,span,applet,object,iframe,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td {margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;vertical-align: baseline;background: transparent;}
+body {line-height: 1; font-family:"lucida grande",tahoma,verdana,arial,sans-serif;}
+ol,ul {list-style: none;}
+blockquote,q {quotes: none;}
+blockquote:before,blockquote:after,q:before,q:after {content: none;}
+:focus {outline: 0;}
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+table {border-collapse: collapse;border-spacing: 0;}
+html {font-size: 100%;min-height: 101%;}
+
+/*http://www.quackit.com/css/css_color_codes.cfm*/
+/*background is colored here*/
+/*body {font-size: 62.5%;color: #666;background: #E0D3F5;}*/
+body {
+    font-size: 62.5%;
+    color: #666;
+    background: #F8F8FF;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*One wrapper to rule them all*/
+.wrapper{
+font-family: Tahoma, Geneva, sans-serif;
+}
+
+.mainContent{
+/*This prevented my text from dropping below the body!*/
+/*http://www.stubbornella.org/content/2009/07/23/overflow-a-secret-benefit/*/
+overflow: hidden;
+/*border-radius: 35px;*/
+/*background-color: white;*/
+/*width: 75%;*/
+width: 900px;
+height: 100%;
+/*padding-bottom:400px;*/
+margin: auto;
+margin-top: 50px;
+}
+
+.mainContent #tagline{
+/*auto has to come first, then just the top margin is overwritten*/
+display: block;
+margin-top: 80px;
+width: 900px;
+}
+
+.mainContent #makeUpWrapper{
+margin: auto;
+text-align: left;
+width: 50%;
+margin-top: 90px;
+color: black;
+font-size: 18px;
+font-family: 'Open Sans', sans-serif;
+line-height: 150%;
+}
+
+#makeUpWrapper h2, h1{
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 30px;
+}
+
+.mainContent #bio{
+float: right;
+width: 50%;
+margin-top: 120px;
+color: black;
+font-size: 18px;
+font-family: 'Open Sans', sans-serif;
+line-height: 150%;
+}
+
+#bio h2{
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 30px;
+}
+
+
+.mainContent #hello{
+float: left;
+width: 50%;
+}
+
+#hithere{
+margin-top: 120px;
+margin-right: 20px;
+display: block;
+float: right;
+width: 450px;
+}
+
+.mainContent #button{
+height: 60px;
+}
+
+.pageTypeHeader {
+font-family: 'Open Sans Condensed', sans-serif;
+color: #9D71F5;
+font-size: 50px;
+}
+
+#centered {
+padding-top: 50px;
+text-align: center;
+}
+
+/*--------------------------------  Header     ---------------------------------*/
+/*TODO unfix the positioning*/
+/*Fixed top banner for entire website*/
+
+#testHead {
+height: 20px;
+width: 110%;
+background-color: red;
+}
+
+#purpleBar {
+position: relative;
+/*margin-top: 60px;*/
+width: 100%;
+min-width: 980px;
+height: 10px;
+margin-top: 0px;
+background-color: #9D71F5;
+}
+
+
+.new_banner {
+z-index: 9000;
+position: relative;
+/*margin-top: 60px;*/
+width: 100%;
+min-width: 980px;
+height: 170px;
+margin-top: 0px;
+background-color: black;
+font-size: 25px;
+font-weight: lighter;
+font-family: 'Open Sans Condensed', sans-serif;
+color: white;
+}
+
+/*Theresa's octopus image*/
+/*display block is a trick to let us center with margin auto*/
+/*http://www.w3.org/Style/Examples/007/center.en.html*/
+/*percentage pos with pixel offset locks this to the center!*/
+#logoPic {
+}
+
+.new_banner #logo {
+position: absolute;
+height: 230px;
+display: block;
+top: -20px;
+left: 50%;
+margin-left: -460px;
+/*margin: auto;*/
+/*margin-top:-100px;*/
+}
+
+.new_banner a{
+display: inline-block;
+font-size: 25px;
+font-weight: lighter;
+text-decoration: none;
+font-family: 'Open Sans Condensed', sans-serif;
+color: white;
+}
+
+.new_banner a:hover{
+color: #9D71F5;
+}
+
+/*logo wouldn't center if these didn't have defined widths*/
+/*fixed this by absolutely positioning the logo*/
+/*I prob want to float the interior text in so I can manage the main content width*/
+/*#leftText{
+z-index: 1000;
+display: inline-block;
+}*/
+
+#navHead  {
+position: absolute;
+right: 50%;
+top: 70px;
+margin-right: -450px;
+z-index: 1000;
+width: 450px;
+}
+
+
+#Portfolio{
+//top: 10px;
+//right: 50%;
+//margin-right: 150px;
+}
+
+#Contact{
+//top: 10px;
+//right: 50%;
+//margin-right: -170px;
+}
+
+#Rates{
+//top: 10px;
+//right: 50%;
+//margin-right: -230px;
+}
+
+#graphicDesign{
+//top: 10px;
+//right: 50%;
+//margin-right: -80px;
+}
+
+#fArt{
+//top: 10px;
+//right: 50%;
+//margin-right: 30px;
+}
+
+/*#Blog{
+top: 24px;
+right: 50%;
+margin-right: -360px;
+}*/
+
+/*http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu*/
+#portParent:hover > ul{
+display: block;
+position: absolute;
+top: 52px;
+right: 30%;
+margin-right: 120px;
+
+}
+
+#portChild{
+display: none;
+}
+
+/*didn't set bGround color until height and width were set*/
+#portChild li{
+height: 40px;
+background-color: black;
+border: 1px solid white;
+}
+
+#fineArt{
+margin-top: 0px;
+padding-left: 10px;
+width: 229px;
+}
+
+#gDesign{
+padding-left: 10px;
+width: 229px;
+}
+/*--------------------------------  End Header     ---------------------------------*/
+
+.gallery{
+margin: auto;
+width: 980px;
+min-width: 900px;
+margin-top: 50px;
+font-family: 'Open Sans', sans-serif;
+}
+
+.gallery #text{
+margin-bottom: 40px;
+font-size: 12px;
+font-weight: bold;
+text-align: center;
+color: black;
+width: 247px;
+height: 50px;
+}
+
+.gallery #leftColumn{
+float: left;
+margin-left: 90px;
+margin-bottom: 300px;
+}
+
+/*!!!!! If the main page content is too wide, header gets CUT OFF!!!!!!*/
+/*right now, mid column's width takes up entire gal body*/
+.gallery #midColumn{
+margin-left: 368px;
+}
+
+.gallery #rightColumn{
+float: right;
+margin-right: 70px;
+}
+
+.dumbWrap{
+margin: auto;
+width: 980px;
+min-width: 980px;
+margin-top: 130px;
+}
+
+/*That float left fix may not be necessary anymore!*/
+/*share with gallery element if it's the same code*/
+.picPage{
+float: left;
+width: 100%;
+margin-bottom: 50px;
+padding-top: 10px;
+}
+
+.picPage #picInfo{
+float: right;
+padding-right: 140px;
+}
+
+#picInfo #fixedInfo {
+  position: absolute;
+  display: block;
+  width: 250px;
+  top: 360px;
+  margin-left: -180px;
+  color: black;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+}
+
+/*
+@media only screen and (min-device-width: 780px) {
+  #picInfo #fixedInfo {
+    position: fixed;
+    display: block;
+    width: 250px;
+    top: 310px;
+    margin-left: -180px;
+    color: black;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 16px;
+  }
+}
+*/
+
+#fixedInfo p{
+font-family: 'Open Sans', sans-serif;
+font-size: 14px;
+}
+
+#fixedInfo #infoBlock {
+height: 220px;
+}
+
+.picPage #mainPic{
+float: left;
+text-align: center;
+font-size: 16px;
+margin-bottom: 200px;
+margin-left: 60px;
+}
+
+#mainPic p{
+margin-top: 5px;
+}
+
+#fashion {
+margin-left: 10px;
+}
+
+#centerNav {
+margin-left: 41%;
+}
+
+#rightButt{
+float:right;
+margin-right: 22px;
+margin-top: 25%;
+}
+#leftButt{
+float:left;
+margin-left:20px; 
+margin-top: 25%;
+}
+
+#mainPic #tPic {
+display: block;
+margin-left: 30px;
+margin-top: 30px;
+}
+
+#leftButton {
+margin-top: 60px;
+margin-left: 30px;
+}
+
+#centerButton {
+display: inline-block;
+margin-bottom: 10px;
+}
+
+#rightButton {
+}
+
+/*********Form********/
+
+#genForm {
+width: 500px;
+margin: auto;
+font-size: 15px;
+padding-right: 120px;
+font-family: 'Open Sans', sans-serif;
+color: black;
+}
+
+#genForm label{
+display: block;
+width: 100px;
+text-align: left;
+font-weight: bold;
+}
+
+#formButton {
+width: 90px;
+margin-left: 100px;
+margin-top: 10px;
+background-color: #915cf7;
+color: white;
+}
+
+#firstname, #lastname, #email {
+width: 300px;
+height: 20px;
+margin-bottom: 10px;
+}
+
+#genForm textarea{
+width: 300px;
+}
+
+#tiffContact {
+width: 50%;
+margin-top: 130px;
+float: right;
+margin-right: 0px;
+}
+
+#tiffContact #tiff {
+margin-bottom: 20px;
+display: block;
+margin-left: 105px;
+}
+
+#linkedin {
+width: 60px;
+display: inline-block;
+margin-left: 5px;
+margin-bottom: 2px;
+}
+
+#twitter {
+width: 60px;
+margin-left: 5px;
+display: inline-block;
+}
+
+#facebook {
+width: 60px;
+margin-left: 40px;
+margin-bottom: 2px;
+}
+
+#instagram {
+margin-left: 5px;
+}
+
+#mainBadges {
+margin-right: 40px;
+}
+
+#badges {
+padding-top: 50px;
+clear:both;
+height: 350px;
+}
+
+#weddingwire {
+margin-top: 25px;
+margin-left: 130px;
+height: 250px;
+}
+
+#crazybeautiful {
+display: inline-block;
+float: right;
+margin-right: 120px;
+height: 290px;
+}
+
+#pinterest {
+width: 60px;
+margin-left: 5px;
+margin-bottom: 1px;
+display: inline-block;
+}
+
+#googleplus {
+width: 60px;
+margin-left: 5px;
+margin-bottom: 2px;
+display: inline-block;
+}
+
+#resume {
+margin-left: -110px;
+margin-top: 20px;
+}
+
+#formFloat {
+width: 50%;
+margin-top: 150px;
+margin-bottom: 300px;
+float: left;
+font-family: 'Open Sans', sans-serif;
+}
+
+#formFloat img{
+margin-left: 98px;
+}
+
+.contactPageContent {
+width: 900px;
+margin: auto;
+}
+
+#footer {
+clear: both;
+text-align: center;
+width: 900px;
+font-size: 20px;
+font-family: 'Open Sans', sans-serif;
+margin: auto;
+margin-top: 100px;
+padding-bottom: 15px;
+}
+
+#bottomText{
+clear: both;
+text-align: center;
+white-space: nowrap;
+color: black;
+font-size: 18px;
+font-family: 'Open Sans', sans-serif;
+line-height: 150%;
+}
+
+
+/*@media screen and (max-width: 1990px) {
+#bio {
+   background-color: blue;
+}
+}*/
+
+/*********End Form*****/
+
+/*TODO*/
+/*Add more padding to picPage white section at bottom to prevent text overhang whem zoomed*/
+/*Why does everything shrink so much in IE???  Can't see all of the pic descr text*/
+/*Get T to give me bigger versions of box pix if they appear in actual page*/
+/*Reducing max widths on pic pages will help fix page resizing issues with text readabilit*/
